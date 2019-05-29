@@ -4,9 +4,9 @@
 
 Learn more about GraphQL here https://graphql.org/learn/
 
-https://github.com/graphql/express-graphql
+GrapQL implementation with express documentation https://github.com/graphql/express-graphql
 
-https://github.com/r-spacex/SpaceX-API
+Documentation of API used in this project https://github.com/r-spacex/SpaceX-API
 
 
 
