@@ -122,5 +122,5 @@ module.exports = new GraphQLSchema({
 #  Next steps
 -  Using GraphQL with Arrays in NodeJS to include Mutations.
 -  Using GraphQL with MongoDB with Queries and Mutations.
-The implementation above uses Apollo which supports both back and frontend implementations.
+• . The implementation above uses Apollo which supports both back and frontend implementations.
 Facebook who created this specification use Relay.
