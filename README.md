@@ -39,3 +39,68 @@ app.use('/graphql', graphqlHTTP({
 
 app.listen(4000);
 ```
+5.  Start backend server
+`npm start`
+6.  Create schema to load data and create queries. Save file as schema.js
+```
+const axios = require("axios");
+const {
+  GraphQLObjectType,
+  GraphQLBoolean,
+  GraphQLInt,
+  GraphQLString,
+  GraphQLSchema,
+  GraphQLList
+} = require("graphql");
+// Launch Type
+const LaunchType = new GraphQLObjectType({
+  name: "Launch",
+  fields: () => ({
+    flight_number: { type: GraphQLInt },
+    mission_name: { type: GraphQLString },
+    launch_year: { type: GraphQLString },
+    launch_date_local: { type: GraphQLString },
+    launch_success: { type: GraphQLBoolean },
+    rocket: { type: RocketType }
+  })
+});
+// Rocket Type
+const RocketType = new GraphQLObjectType({
+  name: "Rocket",
+  fields: () => ({
+    rocket_id: { type: GraphQLString },
+    rocket_name: { type: GraphQLString },
+    rocket_type: { type: GraphQLString }
+  })
+});
+// Root Query with resolvers
+const RootQuery = new GraphQLObjectType({
+  name: "RootQueryType",
+  fields: {
+    launches: {
+      type: new GraphQLList(LaunchType),
+      resolve(parent, args) {
+        return axios
+          .get("https://api.spacexdata.com/v3/launches")
+          .then(response => response.data);
+      }
+    },
+    launch: {
+      type: LaunchType,
+      args: {
+        flight_number: { type: GraphQLInt }
+      },
+      resolve(parent, args) {
+        return axios
+          .get(`https://api.spacexdata.com/v3/launches/${args.flight_number}`)
+          .then(response => response.data);
+      }
+    }
+  }
+});
+module.exports = new GraphQLSchema({
+  query: RootQuery
+});
+```
+7.  Visit GraphQL endpoint to visualise data and query data.  This endpoint has been set in your Server.js file.
+```http://localhost:5000/graphql ```
