@@ -27,10 +27,14 @@ The payload is the part of that response that is communicating directly to you. 
 1.  Intialise Node backend server
 ```npm init```
 2.  Install dependencies
-`npm i graphql express-graphql express axios`
+`npm i graphql express-graphql express axios nodemon`
 3.  Edit JSON file to start backend server
-`"scripts": {
-    "start": "node Server.js"`
+```
+"scripts": {
+    "start": "node Server.js",
+    "server": "nodemon Server.js"
+  }
+  ```
 4.  Create backend server in Server.js using express implementation from documentation about GraphQL on GitHub
 ```
 const express = require("express");
@@ -124,5 +128,6 @@ Facebook who created this specification use Relay.
 -  A specification describes how a product should look and work, this structure makes it easy to work with database and APIs.
 
 #  Next steps
+-  Create React App frontend client to work concurrently with this backend.
 -  Using GraphQL with Arrays in NodeJS to include Mutations.
 -  Using GraphQL with MongoDB with Queries and Mutations.
