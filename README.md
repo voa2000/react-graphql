@@ -4,6 +4,8 @@
 
 -  Query
 .  Every GraphQL schema has a root type for both queries and mutations. The query type defines GraphQL operations that retrieve data from the server.
+-  Mutation
+.  The mutation type defines GraphQL operations that change data on the server. It is analogous to performing HTTP verbs such as POST, PATCH, and DELETE.
 
 Learn more about GraphQL here https://graphql.org/learn/
 
