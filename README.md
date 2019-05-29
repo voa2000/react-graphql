@@ -1,4 +1,4 @@
-# react-graphql
+# React-GraphQL
 
 https://github.com/graphql/express-graphql
 
