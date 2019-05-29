@@ -12,6 +12,6 @@ Promise based HTTP client for the browser and node.js https://github.com/axios/a
 
 https://developer.github.com/v4/
 
-https://goodapi.co/blog/rest-vs-graphql
+REST vs. GraphQL: A Critical Review   https://goodapi.co/blog/rest-vs-graphql
 
 https://launchpad.graphql.com/new
