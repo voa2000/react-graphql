@@ -14,6 +14,7 @@ Why GitHub is using GraphQL . https://developer.github.com/v4/
 
 REST vs. GraphQL: A Critical Review   https://goodapi.co/blog/rest-vs-graphql
 
-https://launchpad.graphql.com/new
+GraphQL Server Playground https://launchpad.graphql.com/new
+GitHub page for Lauchpad playground https://github.com/apollographql/awesome-launchpad 
 
 The payload is the part of that response that is communicating directly to you. In REST APIs this is usually some JSON formatted data. ... You get back an JSON object with a link to a cat picture along with a few other pieces of information. That JSON is the payload.
