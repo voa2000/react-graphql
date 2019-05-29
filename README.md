@@ -1,5 +1,7 @@
 # React-GraphQL
 
+## It’s a query language for API and a runtime for fulfilling those queries with your existing data.
+
 https://github.com/graphql/express-graphql
 
 https://github.com/r-spacex/SpaceX-API
