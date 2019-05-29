@@ -8,7 +8,7 @@ GrapQL implementation with express documentation https://github.com/graphql/expr
 
 Documentation of API used in this project https://github.com/r-spacex/SpaceX-API
 
-
+Promise based HTTP client for the browser and node.js https://github.com/axios/axios
 
 https://developer.github.com/v4/
 
