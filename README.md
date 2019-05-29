@@ -120,6 +120,7 @@ module.exports = new GraphQLSchema({
 -  GraphQL is a specification and not an implementation.
 -  A specification describes how a product should look and work and this structure makes it easy to work with database and APIs.
 #  Next steps
--  Will be using GraphQL with MongoDB
-The implementation above use Apollo which supports both back and frontend implementations.
+-  Using GraphQL with Arrays in NodeJS to include Mutations.
+-  Using GraphQL with MongoDB with Queries and Mutations.
+The implementation above uses Apollo which supports both back and frontend implementations.
 Facebook who created this specification use Relay.
