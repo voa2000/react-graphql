@@ -11,4 +11,7 @@ app.use(
   })
 );
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+app.listen(PORT, () =>
+  console.log(`Server started on port ${PORT}
+      Go to localhost:5000/graphql to access the endpoint`)
+);
