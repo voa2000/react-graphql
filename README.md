@@ -1,6 +1,10 @@
 # React-GraphQL
 
 ## GraphQL is a query language for your API, and a server-side runtime for executing queries by using a type system you define for your data. GraphQL isn't tied to any specific database or storage engine and is instead backed by your existing code and data.
+
+-  Query
+.  Every GraphQL schema has a root type for both queries and mutations. The query type defines GraphQL operations that retrieve data from the server.
+
 Learn more about GraphQL here https://graphql.org/learn/
 
 GrapQL implementation with express documentation https://github.com/graphql/express-graphql
