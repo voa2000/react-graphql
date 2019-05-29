@@ -10,7 +10,7 @@ Documentation of API used in this project https://github.com/r-spacex/SpaceX-API
 
 Promise based HTTP client for the browser and node.js https://github.com/axios/axios
 
-https://developer.github.com/v4/
+Why GitHub is using GraphQL . https://developer.github.com/v4/
 
 REST vs. GraphQL: A Critical Review   https://goodapi.co/blog/rest-vs-graphql
 
