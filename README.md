@@ -20,3 +20,22 @@ The payload is the part of that response that is communicating directly to you. 
 # Development of GraphQL on an express server in Node.
 Intialise Node backend server
 ```npm init```
+Install dependencies
+`npm i graphql express-graphql express axios`
+Edit JSON file to start backend server
+`"scripts": {
+    "start": "node Server.js"`
+Create backend server in Server.js using express implementation from documentation about GraphQL on GitHub
+```
+const express = require('express');
+const graphqlHTTP = require('express-graphql');
+
+const app = express();
+
+app.use('/graphql', graphqlHTTP({
+  schema: MyGraphQLSchema,
+  graphiql: true
+}));
+
+app.listen(4000);
+```
