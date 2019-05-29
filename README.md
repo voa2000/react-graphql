@@ -126,6 +126,8 @@ Facebook who created this specification use Relay.
 #  Summary
 -  GraphQL is a specification and not an implementation.
 -  A specification describes how a product should look and work, this structure makes it easy to work with database and APIs.
+-  It favours fetching the data required therefore stops over fetching good for devices with less memory.
+-  All data can be fetched from one endpoint for all devices and uses as the queries will return only the data you want.
 
 #  Next steps
 -  Create React App frontend client to work concurrently with this backend.
