@@ -116,11 +116,12 @@ module.exports = new GraphQLSchema({
 ```
 7.  Visit GraphQL endpoint to visualise data and query data.  This endpoint has been set in your Server.js file.
 ```http://localhost:5000/graphql ```
-#  Summary
--  GraphQL is a specification and not an implementation.
--  A specification describes how a product should look and work and this structure makes it easy to work with database and APIs.
 8.  The implementation above uses Apollo which supports both back and frontend implementations.
 Facebook who created this specification use Relay.
+
+#  Summary
+-  GraphQL is a specification and not an implementation.
+-  A specification describes how a product should look and work, this structure makes it easy to work with database and APIs.
 
 #  Next steps
 -  Using GraphQL with Arrays in NodeJS to include Mutations.
